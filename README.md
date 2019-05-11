@@ -9,25 +9,42 @@ But building a python environment is also bothering me, so this repository manag
 - python code for batch file conversion (not yet)
 - Memorandum for docker commands
 
-# Usage
-## Single file conversion on macOS
+# Installation
 1. Install docker.
 2. Build Dockerfile with following command.
 ```
 docker build -t python-dl:latest .
 ```
 
-3. Run docker image with mounting current directory as working directory.
+
+# Usage
+## Single file conversion on macOS
+1. Run docker image with mounting current directory as working directory.
 ```bash
 docker run --rm -it -v $(pwd):/var/python python-dl bash
 ```
 
-4. Put SVG file (ex. image.svg) to src directory.
+2. Put SVG file (ex. image.svg) to src directory.
 
-5. Run cairosvg command.
+3. Run cairosvg command.
 ```bash
 cairosvg src/image.svg -o dst/image.png
 ```
+
+## Multiple file conversion on macOS
+1. Run docker image with mounting current directory as working directory.
+```bash
+docker run --rm -it -v $(pwd):/var/python python-dl bash
+```
+
+2. Put SVG files (ex. image.svg) to src directory.
+
+3. Run python script.
+```bash
+python convert.py
+```
+
+4. All SVG files inside ./src will be converted and saved to ./dst
 
 ## Cleanup old build after updating Dockerfile
 If you build Dockerfile after updating it, the previous build may remain like following log.
