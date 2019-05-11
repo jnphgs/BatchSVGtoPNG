@@ -1,5 +1,7 @@
 # BatchSVGtoPNG
 
+![cover.png](./dst/cover.png)
+
 # Introduction
 If you want to convert SVG files repeatedly, it is bothering to open and save files each time.
 Then CairoSVG is a good python library for converting SVG to PNG.

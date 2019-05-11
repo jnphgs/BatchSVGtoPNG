@@ -8,6 +8,8 @@ end_label = '\x1b[0m'
 
 sourceDir = "./src"
 distDir = "./dst"
+if not os.path.exists(distDir):
+      os.makedirs(distDir)
 
 convertList = []
 for root, dirs, files in os.walk(sourceDir, topdown=False):
