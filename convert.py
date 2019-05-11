@@ -32,7 +32,7 @@ success = 0
 error = 0
 for index, (source, dist) in enumerate(convertList):
   progress = '{0}/{1}'.format(index, len(convertList))
-  print(progress + ":\t" + source + " convert... ")
+  print(progress + ":\t" + source + " is converting... ")
   try:
     cairosvg.svg2png(url=source, write_to=dist)
     print("\t" +begin_success_label+ dist + " is converted."+end_label)
