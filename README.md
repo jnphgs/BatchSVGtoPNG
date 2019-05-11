@@ -1,6 +1,6 @@
 # BatchSVGtoPNG
 
-![cover.png](./dst/cover.png)
+![cover.png](./dst/Cover.png)
 
 # Introduction
 If you want to convert SVG files repeatedly, it is bothering to open and save files each time.
