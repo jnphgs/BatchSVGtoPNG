@@ -1,12 +1,12 @@
 # BatchSVGtoPNG
 
 # Introduction
-If you want to convert SVG files repeatedly, it is bothering to open and save files repeatedly.
-CairoSVG is a good python library for converting SVG to PNG.
+If you want to convert SVG files repeatedly, it is bothering to open and save files each time.
+Then CairoSVG is a good python library for converting SVG to PNG.
 But building a python environment is also bothering me, so this repository manages the following things.
 
-- Dockerfile for image to use python and CairoSVG
-- python code for batch file conversion (not yet)
+- Dockerfile for environment to use python and CairoSVG
+- python code for batch file conversion
 - Memorandum for docker commands
 
 # Installation
